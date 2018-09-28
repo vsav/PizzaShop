@@ -26,5 +26,32 @@ class AddProducts < ActiveRecord::Migration[5.2]
                    :is_veg => true,
                    :is_best_offer => false,
                    :img_path => '/images/vegan.png'
+
+    Product.create :title => 'Hawaiian2',
+                   :description => 'This is Hawaiian2 pizza',
+                   :price => 500,
+                   :size => 30,
+                   :is_spicy => false,
+                   :is_veg => false,
+                   :is_best_offer => false,
+                   :img_path => '/images/hawaii.png'
+
+    Product.create :title => 'Pepperoni2',
+                   :description => 'Nice Pepperoni2 pizza',
+                   :price => 400,
+                   :size => 30,
+                   :is_spicy => true,
+                   :is_veg => false,
+                   :is_best_offer => false,
+                   :img_path => '/images/pepperoni.png'
+
+    Product.create :title => 'Vegetarian2',
+                   :description => 'Amazing Vegetarian2 pizza',
+                   :price => 350,
+                   :size => 30,
+                   :is_spicy => false,
+                   :is_veg => true,
+                   :is_best_offer => false,
+                   :img_path => '/images/vegan.png'
   end
 end
