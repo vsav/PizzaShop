@@ -26,3 +26,7 @@ get '/order' do
   erb :order
 end
 
+get '/cart' do
+  erb :cart
+end
+
