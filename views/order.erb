@@ -1,0 +1,35 @@
+<!--<h1 class="display-4">Choose one</h1>-->
+
+<div class="container">
+  <div class="row">
+  <%@products.each do |pizza|%>
+
+    <div class="col-md-4 text-center">
+      <br>
+      <p class="lead"><%=pizza.title %></p>
+      <img src="<%=pizza.img_path %>" class="rounded" width="300px"></img>
+      <br><br>
+      <p class="text-muted text-md-center"><%=pizza.description%></p>
+      <br>
+      <div class="row">
+        <div class="col-md-6 text-right">
+          <p class="lead">
+            Size: <%=pizza.size%>
+          </p>
+        </div>
+        <div class="col-md-6 text-left">
+          <p class="lead">
+            Price: <%=pizza.price %>
+          </p>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-md-12">
+          <button class="btn-primary btn">Add to cart</button>
+        </div>
+      </div>
+    </div>
+    <%end%>
+  </div>
+</div>
